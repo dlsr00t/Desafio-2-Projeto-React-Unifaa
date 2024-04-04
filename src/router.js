@@ -1,5 +1,6 @@
 import Home from "./pages/home/home.js";
 import Clientes from "./pages/clientes/clientes.js";
+import Produtos from "./pages/produtos/produtos.js"
 import Login from "./pages/login/login.js";
 import Menu from "./components/menu/menu.js";
 
@@ -14,6 +15,7 @@ export default function Router(){
                 <Route path="/" element={<Login />} />
                 <Route path="/home" element={<Home />} />
                 <Route path="/clientes" element={<Clientes />} />
+				<Route path="/produtos" element={<Produtos/>} />
             </Routes>
         </BrowserRouter>
     )
