@@ -5,6 +5,9 @@
     Id (#btn-entrar)
     Sletor (Tujo junto e misturado)
 */
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 *{
@@ -19,7 +22,7 @@
 body{
   /* background-image: linear-gradient(to right, rgb(0,188,145), rgb(0,173,243)); */
 
-  background-image: url(./assets/fundo.jpeg);
+  background-image: url(../../assets/fundo.jpeg);
   /* background-color: rgb(0, 0, 0); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -38,7 +41,7 @@ body{
 .logo{
   animation: volta 1.5s ease-out;
   transition: transform 1s;
-  
+
 }
 
 h1{
@@ -118,7 +121,7 @@ h1{
   position: absolute;
   width: 100%;
   background: transparent;
-  
+
   border: 2px solid rgba(255,255,255, 1);
   border-radius: 40px;
   animation: focar ;
@@ -133,7 +136,7 @@ h1{
       transition: 1s;
   }
   to{
-      
+
       transform: scaleX(1);
       transition: 1s;
   }
@@ -156,24 +159,24 @@ h1{
 .grupo #iemail{
   position: absolute;
   right: 20px;
-  
+
   top:50%;
-  
+
   transform: translateY(-50%);
-  
+
   font-size: 30px;
-  
+
 }
 
 #trancado{
   display: block;
   position: absolute;
   right: 20px;
-  
+
   top:50%;
-  
+
   transform: translateY(-50%);
-  
+
   /* font-size: 30px; */
   font-size: 30px;
 
@@ -184,11 +187,11 @@ h1{
   display: block;
   position: absolute;
   right: 20px;
-  
+
   top:50%;
-  
+
   transform: translateY(-50%);
-  
+
   /* font-size: 30px; */
   font-size: 30px;
   cursor: pointer;
@@ -229,7 +232,7 @@ input{
   height: 45px;
   background-color: white;
   border: none;
-  outline: none;    
+  outline: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(0,0,0, .1);
   cursor: pointer;
