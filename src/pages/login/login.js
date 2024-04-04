@@ -7,8 +7,8 @@ import usuarioService from "../../services/usuario-service";
 
 function Login() {
 
-    const [email, setEmail] = useState("admin@admin.com");
-    const [senha, setSenha] = useState("123456");
+    const [email, setEmail] = useState("");
+    const [senha, setSenha] = useState("");
 
     // const navigate = useLocation();
 
@@ -29,8 +29,8 @@ function Login() {
 			   Swal.fire({
 				icon: 'error',
 				text: "Os campos de e-mail e senha são obrigatórios, verifique!"
-			});
-			}else if(true){
+				});
+			}else if(email !== "admin@admin.com" && senha != "123456"){
 				Swal.fire({
 				 icon: 'error',
 				 text: "Email ou Senha incorretos!"
@@ -39,16 +39,7 @@ function Login() {
         	});
     };
 
-	const clicado = () => {
-		const campoEmail = document.querySelector("#email");
-		const campoSenha = document.querySelector("#senha");
-		let emailDigitado = campoEmail.value.toLowerCase();
-		let senhaDigitada = campoSenha.value;
 
-		console.log(emailDigitado);
-
-		autenticar();
-	}
 
 	const esconder = () =>{
 		let iconeT = document.getElementById("trancado");
@@ -66,14 +57,7 @@ function Login() {
 
 	}
 
-	{/*
-	const meta = () => {
-		cEmail = document.getElementById("email");
-		cSenha = document.getElementById("senha");
-		cEmail.setEmail(target.value);
-		cSenha.setSenha(target.value);
-	}
-	*/}
+
 	return (
 
 	  <div className="App">

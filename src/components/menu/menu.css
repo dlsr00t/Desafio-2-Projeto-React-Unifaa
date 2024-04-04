@@ -1,9 +1,9 @@
 ul.menu {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
-    background-color: var(--cor-primaria);
+	background-image: linear-gradient(rgb(0,72,119), rgb(63,123,166));
 }
 
 li {
@@ -23,10 +23,14 @@ li a {
 }
 
 li a:hover{
-    background-color: var(--cor-secundaria);
+    /*background-color: var(--cor-secundaria);*/
+	border-radius: 10px;
+	box-shadow: 0px 0px 7px rgb(255,255,255);
+
 }
 
 li:last-child{
     float: right;
+
     margin-right: 25px;
 }
