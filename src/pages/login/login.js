@@ -1,4 +1,4 @@
-import "./index.css";
+import "./login.css";
 import fundo from "../../assets/logo_unifaa_branca.png";
 import { useState } from "react";
 import Swal from "sweetalert2";
@@ -14,13 +14,6 @@ function Login() {
 
 
     const autenticar = () => {
-
-        if(!email || !senha){
-           Swal.fire({
-            icon: 'error',
-            text: "Os campos de e-mail e senha são obrigatórios, verifique!"
-           });
-        }
 
         // Aqui tenho que me comunicar com o backend.
         usuarioService
@@ -73,9 +66,14 @@ function Login() {
 
 	}
 
-
-
-
+	{/*
+	const meta = () => {
+		cEmail = document.getElementById("email");
+		cSenha = document.getElementById("senha");
+		cEmail.setEmail(target.value);
+		cSenha.setSenha(target.value);
+	}
+	*/}
 	return (
 
 	  <div className="App">
@@ -83,18 +81,18 @@ function Login() {
 		  <div className="caixa-login">
 			  {/*- Titulo da tela de login --*/}
 			  <div className="titulo-login">
-				  <h1>Login</h1>
+				  <h1 id="titulo">Login</h1>
 			  </div>
 
 			  {/*- Grupo do email --*/}
 			  <div className="grupo">
-				  <input id="email" type="text" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu e-mail"/>
+				  <input id="email" type="text" onChange={(e) => setEmail(e.target.value)} placeholder="Digite seu e-mail"/>
 				  <i className='bx bxs-envelope' id = "iemail"></i>
 			  </div>
 
 			  {/*- Grupo do senha -*/}
 			  <div className="grupo" id = "csenha">
-				  <input id="senha" value={senha} onChange={(e) => setSenha(e.target.value)} type="password" placeholder="Digite sua senha"/>
+				  <input id="senha" onChange={(e) => setSenha(e.target.value)} type="password" placeholder="Digite sua senha"/>
 
 				  <ion-icon name="lock-open" id="aberto" onClick={esconder}></ion-icon>
 				  <ion-icon name="lock-closed" id="trancado" onClick={mostrar}></ion-icon>

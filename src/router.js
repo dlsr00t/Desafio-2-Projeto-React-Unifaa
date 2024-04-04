@@ -1,8 +1,8 @@
-import Home from "./pages/home";
-import Clientes from "./pages/clientes";
-import Login from "./pages/login";
+import Home from "./pages/home/home.js";
+import Clientes from "./pages/clientes/clientes.js";
+import Login from "./pages/login/login.js";
+import Menu from "./components/menu/menu.js";
 
-import Menu from "./components/menu";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 export default function Router(){
