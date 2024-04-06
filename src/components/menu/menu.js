@@ -10,9 +10,9 @@ export default function Menu(){
     if(useLocation().pathname !== "/"){
         return(
             <ul className="menu">
-                <li><Link to='/home'>Home</Link></li>
+                {/*<li><Link to='/home'>Home</Link></li>*/}
                 <li><Link to='/clientes'>Clientes</Link></li>
-				<li><Link to='/produtos'>Produtos</Link></li>
+				{/*<li><Link to='/produtos'>Produtos</Link></li>*/}
                 <li><Link onClick={logout}>Sair</Link></li>
             </ul>
         )
